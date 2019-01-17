@@ -15,6 +15,21 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Front End Web Developer</h1>
               <hr />
+              <p>HTML/CSS | Bootstrap | SASS | JavaScript | JQuery | React</p>
+              <div className="social-links">
+                {/* LinkedIn */}
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                  <i className="fab fa-linkedin" aria-hidden="true" />
+                </a>
+                {/* GitHub */}
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                  <i className="fab fa-github-square" aria-hidden="true" />
+                </a>
+                {/* CodePen */}
+                <a href="http://codepen.com" rel="noopener noreferrer" target="_blank">
+                  <i className="fab fa-codepen" aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </Cell>
         </Grid>
