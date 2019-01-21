@@ -66,6 +66,8 @@ class Resume extends Component {
               jobDescription="Phasellus pretium eros sit amet urna laoreet efficitur. Integer tincidunt justo nec tempor vulputate. Integer ut nisl vehicula, pellentesque urna quis, porta leo. Suspendisse potenti. Aliquam eu nibh a nulla sollicitudin congue quis at odio."
             />
             <hr style={{ borderTop: '3px solid #e22947' }} />
+            <h2>Skills</h2>
+
           </Cell>
         </Grid>
       </div>
