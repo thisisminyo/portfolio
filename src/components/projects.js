@@ -1,5 +1,17 @@
 import React, { Component } from "react";
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from "react-mdl";
+import {
+  Tabs,
+  Tab,
+  Grid,
+  Cell,
+  Card,
+  CardTitle,
+  CardText,
+  CardActions,
+  Button,
+  CardMenu,
+  IconButton
+} from "react-mdl";
 
 class Projects extends Component {
   constructor(props) {
@@ -8,15 +20,23 @@ class Projects extends Component {
   }
 
   toggleCategories() {
-    if (this.state.activeTab == 0) {
+    if (this.state.activeTab === 0) {
       return (
         <div className="projects-grid">
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle style={{ color: "#fff", height: "176px", background: "url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover" }}>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover"
+              }}
+            >
               React Project #1
             </CardTitle>
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat ligula nec mi semper viverra.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              volutpat ligula nec mi semper viverra.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -27,12 +47,20 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle style={{ color: "#fff", height: "176px", background: "url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover" }}>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover"
+              }}
+            >
               React Project #2
             </CardTitle>
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat ligula nec mi semper viverra.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              volutpat ligula nec mi semper viverra.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -43,12 +71,20 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-            <CardTitle style={{ color: "#fff", height: "176px", background: "url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover" }}>
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover"
+              }}
+            >
               React Project #3
             </CardTitle>
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat ligula nec mi semper viverra.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              volutpat ligula nec mi semper viverra.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -60,26 +96,36 @@ class Projects extends Component {
             </CardMenu>
           </Card>
         </div>
-      )
+      );
     } else if (this.state.activeTab === 1) {
       return (
-        <div><h1>This is React2</h1></div>
-      )
+        <div>
+          <h1>This is React2</h1>
+        </div>
+      );
     } else if (this.state.activeTab === 2) {
       return (
-        <div><h1>This is React3</h1></div>
-      )
+        <div>
+          <h1>This is React3</h1>
+        </div>
+      );
     } else if (this.state.activeTab === 3) {
       return (
-        <div><h1>This is React4</h1></div>
-      )
+        <div>
+          <h1>This is React4</h1>
+        </div>
+      );
     }
   }
 
   render() {
     return (
       <div className="category-tabs">
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <Tabs
+          activeTab={this.state.activeTab}
+          onChange={tabId => this.setState({ activeTab: tabId })}
+          ripple
+        >
           <Tab>React</Tab>
           <Tab>React2</Tab>
           <Tab>React3</Tab>
@@ -87,9 +133,7 @@ class Projects extends Component {
         </Tabs>
         <Grid>
           <Cell col={12}>
-            <div className="content">
-              {this.toggleCategories()}
-            </div>
+            <div className="content">{this.toggleCategories()}</div>
           </Cell>
         </Grid>
       </div>
